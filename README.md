@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Total Entries](https://img.shields.io/badge/Total%20Entries-776-blue?style=for-the-badge&logo=database&logoColor=white)
+![Total Entries](https://img.shields.io/badge/Total%20Entries-777-blue?style=for-the-badge&logo=database&logoColor=white)
 ![Last Updated](https://img.shields.io/badge/Updated-October_2026-purple?style=for-the-badge&logo=calendar&logoColor=white)
 
 **Version: 0.1.1**
@@ -537,6 +537,7 @@ Missing something? [Submit an issue](https://github.com/moshehbenavraham/Ultimat
 | **mem0** | [Link](https://mem0.ai/) | Universal self-improving memory layer for AI agents and LLM applications, enabling personalized AI interactions with just three lines of code. Features long-term, short-term, semantic, and episodic memory types, integrates with OpenAI, LangGraph, CrewAI, and selected as exclusive memory provider for AWS Agent SDK. Achieves 26% improvement in LLM-as-a-Judge metrics with 91% lower p95 latency and 90% token cost savings. |
 | **Milvus** | [GitHub](https://github.com/milvus-io/milvus) | Open-source, cloud-native vector database for scalable approximate nearest-neighbor search over high-dimensional data. Milvus supports large-scale vector indexing, distributed deployments, multimodal search, and managed Zilliz Cloud deployments for RAG and AI search workloads. ![Stars](https://img.shields.io/badge/stars-46112-yellow) |
 | **MixedVoices** | [Link](https://pypi.org/project/mixedvoices/) | Open-source analytics and evaluation platform for voice AI agents, functioning as Mixpanel for conversational AI with auto-generation of interactive call flow visualizations. Enables developers to analyze, visualize, evaluate, and optimize conversational AI performance by understanding common user paths, behaviors, and agent interaction patterns for continuous improvement. |
+| **Mnemoverse** | [GitHub](https://github.com/mnemoverse/mcp-memory-server) | Hosted long-term memory for AI agents over MCP. Connect with a browser sign-in on the hosted endpoint, with no API key to paste, or run the open-source npm server locally with a key; the same memory follows you across Claude Code, Cursor, VS Code, Codex and ChatGPT. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms (beta) let several agents work from one memory. The MCP server and Python SDK are open source under MIT; the memory engine is a hosted service with a free tier. ![Stars](https://img.shields.io/badge/stars-27-yellow) |
 | **Modal** | [Link](https://modal.com/) | Serverless cloud platform for running AI workloads, agents, sandboxes, batch jobs, and model inference from Python. Modal is commonly used to host code execution, tool execution, and GPU-backed agent infrastructure. |
 | **Model Context Protocol** | [Link](https://modelcontextprotocol.io/docs/getting-started/intro) | Open protocol for connecting AI applications and agents to external tools, data sources, and prompts. MCP defines a client-server architecture that lets models discover and call capabilities exposed by compatible servers. |
 | **Model Context Protocol SDKs** | [GitHub](https://github.com/modelcontextprotocol) | Official SDK collection for implementing MCP clients and servers across languages including Python, TypeScript, Kotlin, Java, C#, Go, Ruby, and Rust. These SDKs provide the base libraries for protocol-compliant MCP integrations. |
@@ -979,9 +980,9 @@ Missing something? [Submit an issue](https://github.com/moshehbenavraham/Ultimat
 
 ## Statistics
 
-- **Total Entries:** 776
+- **Total Entries:** 777
 - **Categories:** 12
-- **Last Generated:** 2026-10-21
+- **Last Generated:** 2026-10-28
 
 ---
 
