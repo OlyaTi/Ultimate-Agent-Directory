@@ -6,13 +6,15 @@ Usage:
     python scripts/generate_readme.py
 """
 
-from pathlib import Path
 from collections import defaultdict
 from datetime import date
+from pathlib import Path
+from urllib.parse import urlparse
+
 import yaml
+from config import load_site_config
 from jinja2 import Environment, FileSystemLoader
 from models import AgentEntry, Category, DirectoryMetadata
-from config import load_site_config
 
 
 def load_categories() -> list[Category]:
@@ -55,6 +57,18 @@ def markdown_table_cell(value) -> str:
     return text.replace("|", r"\|")
 
 
+def link_label(url) -> str:
+    """Return "GitHub" only for real github.com URLs, otherwise "Link".
+
+    An entry can have a github_repo while its primary url points at a
+    homepage; labelling that link "GitHub" would be misleading.
+    """
+    if not url:
+        return "Link"
+    host = (urlparse(str(url)).hostname or "").lower()
+    return "GitHub" if host in ("github.com", "www.github.com") else "Link"
+
+
 def group_by_category(agents: list[AgentEntry]) -> dict:
     """Group agents by category"""
     grouped = defaultdict(list)
@@ -79,6 +93,7 @@ def render_readme(
         loader=FileSystemLoader("templates"), trim_blocks=True, lstrip_blocks=True
     )
     env.filters["markdown_table_cell"] = markdown_table_cell
+    env.filters["link_label"] = link_label
     template = env.get_template("readme.jinja2")
 
     return template.render(
